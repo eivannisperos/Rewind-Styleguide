@@ -5,25 +5,100 @@
     <title>rewind | sitemap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto" rel="stylesheet">
     <script type="text/javascript" src="javascript/script.js"></script>
   </head>
 
   <body>
-    <nav class="flex-display" id="styleguide-menu">
-      <div id="styleguide-menu-links" class="flex-display">
-        <a href="index.html">VHS</a>
-        <a>Interactive Elements</a>
-        <a>Text Styles</a>
-        <a>Combined Elements</a>
-        <a>Citations</a>
-      </div>
-    </nav>
+    <div class="flex-display" id="menu-content-grid">
+      <nav class="flex-display" id="styleguide-menu">
+        <div id="styleguide-menu-links" class="flex-display">
+          <a href="index.html">VHS</a>
+          <a href="interactive-elements">Interactive Elements</a>
+          <a>Text Styles</a>
+          <a>Combined Elements</a>
+          <a>Citations</a>
 
-    <div class="flex-display" id="grid-home">
+          <span id="close-menu-btn">close</span>
+        </div>
+      </nav>
+
       <div class="flex-display" id="styleguide-content">
-        <span id="toggle-menu-btn">open</span>
-        <span id="close-menu-btn">close</span>
+        <nav class="flex-display" id="toggle-menu-nav">
+          <a class="mobile-icon-link" id="toggle-menu-btn"><img src="img/menu-toggle.png" alt="hidden menu, toggle to enable hidden menu"/></a>
+          <h1 class="mobile-icon-link" id="home-link-icon">REWIND</h1>
+        </nav>
+
+        <section id="interactive-elements">
+          <h2>Interactive Elements</h2>
+          <section class="sub-section" id="in-text-link">
+            <h3>In-text links</h3>
+            <p>
+              This is an example of an <a href="#" class="sub-button">in-text link</a>.
+            </p>
+            <code>
+              <p>&lt;a href="#" class="sub-button"&gt;</p>
+              <p style="padding-left: 30px;">in-text link</p>
+              <p>&lt;/a&gt;</p>
+            </code>
+          </section>
+
+          <section class="sub-section" id="navigation-style">
+            <h3>Navigation Bar</h3>
+            <nav id="main-nav">
+              <a class="nav-link mobile-icon-link"><img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /></a>
+              <div id="main-nav-bar-hidden">
+                <a class="nav-link hidden-link" href="#">Link</a>
+                <a class="nav-link hidden-link" href="#">Link</a>
+                <a class="nav-link hidden-link" href="#">Link</a>
+                <a class="nav-link hidden-link" href="#">Link</a>
+              </div>
+
+              <a class="nav-link" id="home-link-icon" href="#">REWIND</a>
+              <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
+            </nav>
+
+            <code>
+              <p>&lt;nav id="main-nav"&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;a class="nav-link mobile-icon-link"&gt;</p>
+              <p style="padding-left: 60px;">&lt;img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /&gt;</p>
+              <p style="padding-left: 30px;">&lt;/a&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;div id="main-nav-bar-hidden"&gt;</p>
+              <p style="padding-left: 60px;"><br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;/div&gt;</p>
+              <p style="padding-left: 30px;">&lt;a class="nav-link" id="home-link-icon" href="#"&gt;</p>
+              <p style="padding-left: 60px;">REWIND</p>
+              <p style="padding-left: 30px;">&lt;/a&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;a class="nav-link mobile-icon-link" id="search-toggle"&gt;</p>
+              <p style="padding-left: 60px;">&lt;img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/&gt;</p>
+              <p style="padding-left: 30px;">&lt;/a&gt;</p>
+              <p><br /> &lt;/nav&gt;</p>
+            </code>
+          </section>
+
+          <section class="sub-section" id="button-styles">
+            <h3>Button Styles</h3>
+            <div class="button-div">
+              <input class="button-back" type="button" value="Back" id="#" onclick="location.href='#'" />
+              <input class="button-go" type="submit" value="Go" />
+            </div>
+
+            <code>
+              <p>&lt;div class="button-div"&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;input class="button-back" type="button" value="Register" id="#" onclick="location.href='#'" /&gt;<br /> &lt;input class="button-go" type="submit" value="Sign In" /&gt;</p>
+              <p><br /> &lt;/div&gt;</p>
+            </code>
+          </section>
+
+          <section class="sub-section" id="text-boxes">
+            <h3>Textboxes / Textareas</h3>
+            <h4>Textbox: Form</h4>
+            <form>
+              <input type="text" id="text-field" name="text" placeholder="text" required/>
+            </form>
+          </section>
+        </section>
       </div>
     </div>
   </body>
