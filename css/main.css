@@ -368,20 +368,16 @@ input::placeholder {
 
   #styleguide-menu {
     position: fixed;
-    width: 20%;
+    width: 30%;
   }
 
   #styleguide-content {
-    margin-left: 20%;
+    margin-left: 30%;
   }
 
   #close-menu-btn {
     display: none;
   }
-
-  /*
-  nav
-  */
 
   /*nav*/
   .mobile-icon-link {
@@ -416,5 +412,24 @@ input::placeholder {
 
   #close-nav {
     display: none;
+  }
+
+  /*button-styles*/
+  .button-div {
+    width: 50%;
+  }
+
+  /*text-boxes*/
+  form {
+    width: 50%;
+  }
+
+  /*********************************************************
+  combined elements
+  **********************************************************/
+
+  .product-listing {
+    margin: auto;
+    width: 50%;
   }
 }

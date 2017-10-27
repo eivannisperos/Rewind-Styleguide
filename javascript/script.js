@@ -10,8 +10,8 @@ window.onload = function() {
   var mobileMenuBarWidth = '70%';
   var mobileContentLeftM = '70%';
 
-  var desktopMenuBarWidth = '20%';
-  var desktopContentLeftM = '20%';
+  var desktopMenuBarWidth = '30%';
+  var desktopContentLeftM = '30%';
 
   //navigational javascript
   var mobileLinks = document.getElementById('main-nav-bar-hidden');
