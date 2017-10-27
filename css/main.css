@@ -188,7 +188,7 @@ input::placeholder {
   */
   #styleguide-menu {
     position: fixed;
-    background-color: rgba(0, 0 ,0, 0.9);
+    background-color: #39505E;
     color: white;
     height: 100vh;
     width: 0;
@@ -254,6 +254,10 @@ input::placeholder {
   navigation
   */
 
+  .nav-link {
+    margin-bottom: 0.5rem;
+  }
+
   #main-nav {
     background-color: white;
     width: 100%;
@@ -261,6 +265,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem;
     position: relative;
   }
 
@@ -271,8 +276,17 @@ input::placeholder {
     position: absolute;
     flex-direction: column;
     top: 100%;
-    padding: 1rem;
+    left: 0;
     width: 30%;
+    padding: 1rem;
+  }
+
+  #home-close-btn-group {
+    flex-direction: row;
+  }
+
+  #close-nav {
+    margin-left: auto;
   }
 
   /*
@@ -360,12 +374,16 @@ input::placeholder {
   }
 
   #styleguide-menu {
-    position: static;
-    width: 40%;
+    position: fixed;
+    width: 30%;
   }
 
   #styleguide-content {
-    margin-left: 0;
+    margin-left: 30%;
+  }
+
+  #close-menu-btn {
+    display: none;
   }
 
   /*nav*/
@@ -401,6 +419,25 @@ input::placeholder {
 
   #close-nav {
     display: none;
+  }
+
+  /*button-styles*/
+  .button-div {
+    width: 50%;
+  }
+
+  /*text-boxes*/
+  form {
+    width: 50%;
+  }
+
+  /*********************************************************
+  combined elements
+  **********************************************************/
+
+  .product-listing {
+    margin: auto;
+    width: 50%;
   }
 }
 

@@ -14,13 +14,13 @@
     <div class="flex-display" id="menu-content-grid">
       <nav class="flex-display" id="styleguide-menu">
         <div id="styleguide-menu-links" class="flex-display">
-          <a href="index.html">VHS</a>
-          <a href="interactive-elements">Interactive Elements</a>
-          <a>Text Styles</a>
-          <a>Combined Elements</a>
-          <a>Citations</a>
+          <a class="nav-link" href="index.html">VHS</a>
+          <a class="nav-link" href="#interactive-elements">Interactive Elements</a>
+          <a class="nav-link" href="#text-styles">Text Styles</a>
+          <a class="nav-link" href="#combined-elements">Combined Elements</a>
+          <a class="nav-link" href="citations.html">Citations</a>
 
-          <span id="close-menu-btn">close</span>
+          <a class="nav-link" id="close-menu-btn">X</a>
         </div>
       </nav>
 
@@ -49,8 +49,10 @@
             <nav id="main-nav">
               <a class="nav-link mobile-icon-link"><img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /></a>
               <div id="main-nav-bar-hidden">
-                <a class="nav-link hidden-link" id="close-nav">X</a>
-                <a class="nav-link hidden-link" href="#">Link</a>
+                <div class="flex-display" id="home-close-btn-group">
+                  <a class="nav-link hidden-link" href="#">Link</a>
+                  <a class="nav-link hidden-link" id="close-nav">X</a>
+                </div>
                 <a class="nav-link hidden-link" href="#">Link</a>
                 <a class="nav-link hidden-link" href="#">Link</a>
                 <a class="nav-link hidden-link" href="#">Link</a>

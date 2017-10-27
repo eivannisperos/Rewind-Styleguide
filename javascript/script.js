@@ -10,8 +10,8 @@ window.onload = function() {
   var mobileMenuBarWidth = '70%';
   var mobileContentLeftM = '70%';
 
-  var desktopMenuBarWidth = '40%';
-  var desktopContentLeftM = '0';
+  var desktopMenuBarWidth = '30%';
+  var desktopContentLeftM = '30%';
 
   //navigational javascript
   var mobileLinks = document.getElementById('main-nav-bar-hidden');
@@ -24,12 +24,16 @@ window.onload = function() {
 
   function hideMobileLinks(e) {
     if (e.target != mobileLinks ) {
-      mobileLinks.style.display = 'none';
+      hideMobileLinksAction();
     }
   }
 
   function showMobileLinks() {
     mobileLinks.style.display = 'flex';
+  }
+
+  function hideMobileLinksAction() {
+    mobileLinks.style.display = 'none';
   }
 
   function openNav() {
@@ -51,6 +55,7 @@ window.onload = function() {
       toggleMenuBtn.addEventListener("click", openNav);
       closeMenuBtn.addEventListener("click", closeNav);
 
+      hideMobileLinksAction();
       mobileIcon.addEventListener("click", showMobileLinks);
       closeMobileNav.addEventListener("click", hideMobileLinks);
 
