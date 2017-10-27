@@ -96,7 +96,168 @@
             <h4>Textbox: Form</h4>
             <form>
               <input type="text" id="text-field" name="text" placeholder="text" required/>
+              <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
+              <input type="email" id="email" name="email" placeholder="email" required />
+              <select name="country" placeholder="Select Your Country">
+                <option value="" disabled selected>Country</option>
+                <option value="CAN">
+                  Canada
+                </option>
+
+                <option value="USA">
+                  United States
+                </option>
+              </select>
             </form>
+
+            <code>
+              <p>&lt;form&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;input type="text" id="text-field" name="text" placeholder="text" required/&gt;<br /> &lt;input type="password" id="password" name="pass-word" placeholder="&amp;#9679;&amp;#9679;&amp;" required/&gt;<br /> &lt;input type="email" id="email" name="email" placeholder="email" required /&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;select name="country" placeholder="Select Your Country"&gt;</p>
+              <p style="padding-left: 60px;"><br /> &lt;option value="" disabled selected&gt;Country&lt;/option&gt;<br /> &lt;option value="CAN"&gt;<br /> Canada<br /> &lt;/option&gt;</p>
+              <p style="padding-left: 60px;">&lt;option value="USA"&gt;<br /> United States<br /> &lt;/option&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;/select&gt;</p>
+              <p><br /> &lt;/form&gt;</p>
+              <p>&nbsp;</p>
+            </code>
+
+            <h4>Textbox: Textarea</h4>
+            <textarea id="page-textarea" placeholder="tell us what you think"></textarea>
+            <code>
+              <p>&lt;textarea id="page-textarea" placeholder="tell us what you think"&gt;&lt;/textarea&gt;</p>
+              <p>&nbsp;</p>
+            </code>
+          </section>
+        </section>
+
+        <section id="text-styles" >
+          <h2>In-text Styles</h2>
+          <section class="sub-section" id="header-levels">
+            <h3>Levels of Heading</h3>
+            <h1>Level 1</h1>
+            <h2>Level 2</h2>
+            <h3>Level 3</h3>
+            <h4>Level 4</h4>
+
+            <code>
+              <p>&lt;h1&gt;Level 1&lt;/h1&gt;<br /> &lt;h2&gt;Level 2&lt;/h2&gt;<br /> &lt;h3&gt;Level 3&lt;/h3&gt;<br /> &lt;h4&gt;Level 4&lt;/h4&gt;</p>
+              <p>&nbsp;</p>
+            </code>
+          </section>
+
+          <section class="sub-section" id="paragraph-style">
+            <h3>Paragraph</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <code>
+              <p>&lt;p&gt;<br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /> &lt;/p&gt;</p>
+            </code>
+          </section>
+
+          <section class="sub-section" id="bullet-style">
+            <h3>Bullet List</h3>
+            <ul>
+              <li>
+                Item 1
+              </li>
+              <li>
+                Item 2
+              </li>
+              <li>
+                Item 3
+              </li>
+            </ul>
+
+            <code>
+              <p>&lt;ul&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 1<br /> &lt;/li&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 2<br /> &lt;/li&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 3<br /> &lt;/li&gt;</p>
+              <p><br /> &lt;/ul&gt;</p>
+            </code>
+          </section>
+
+          <section class="sub-section" id="numbered-list">
+            <h3>Numbered List</h3>
+            <ol>
+              <li>
+                Item 1
+              </li>
+              <li>
+                Item 2
+              </li>
+              <li>
+                Item 3
+              </li>
+            </ol>
+
+            <code>
+              <p>&lt;ol&gt;</p>
+              <p style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 1<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> Item 2<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> Item 3<br /> &lt;/li&gt;</p>
+              <p><br /> &lt;/ol&gt;</p>
+            </code>
+          </section>
+        </section>
+
+        <section id="combined-elements">
+          <h2>Combined Elements</h2>
+          <section class="sub-section" id="product-listing">
+            <h3>Product Listing</h3>
+            <div class="product-listing">
+              <a href="#">
+                <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
+              </a>
+              <div class="flex-display" id="product-title-genre">
+                <div>
+                  <h3 class="product-list-title">The Intruder</h3>
+                  <figcaption class="product-genre-category">
+                    Action
+                  </figcaption>
+                </div>
+                <a class="product-price">$19.99</a>
+              </div>
+            </div>
+
+            <div class="product-listing">
+              <a href="#">
+                <img class="product-list-img" src="img/product2.jpg" alt="Man firing machine gun off into the distance"/>
+              </a>
+              <div class="flex-display" id="product-title-genre">
+                <div>
+                  <h3 class="product-list-title">The Intruder</h3>
+                  <figcaption class="product-genre-category">
+                    Action
+                  </figcaption>
+                </div>
+                <a class="product-price">$19.99</a>
+              </div>
+            </div>
+
+            <div class="product-listing">
+              <a href="#">
+                <img class="product-list-img" src="img/product3.jpg" alt="Man firing machine gun off into the distance"/>
+              </a>
+              <div class="flex-display" id="product-title-genre">
+                <div>
+                  <h3 class="product-list-title">The Intruder</h3>
+                  <figcaption class="product-genre-category">
+                    Action
+                  </figcaption>
+                </div>
+                <a class="product-price">$19.99</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="sub-section" id="content-structure">
+            <h3>Content Structure</h3>
+            <p>
+              Expand and shrink the page to see the vertical and horizontal content structure.
+            </p>
+            <section class="flex-display">
+
+            </section>
           </section>
         </section>
       </div>

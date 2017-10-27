@@ -21,15 +21,14 @@ window.onload = function() {
 
   var deleteItemLogo = document.getElementsByClassName('delete-item');
 
-  function mobileMenuCloseOpen(e) {
+  function hideMobileLinks(e) {
     if (e.target != mobileLinks ) {
       mobileLinks.style.display = 'none';
     }
+  }
 
-    if (e.target == mobileIcon || e.target == mobileIconPadding) {
-      console.log("clicked!");
-      mobileLinks.style.display = 'flex';
-    }
+  function showMobileLinks() {
+    mobileLinks.style.display = 'flex';
   }
 
   function openNav() {
@@ -50,6 +49,9 @@ window.onload = function() {
       closeNav();
       toggleMenuBtn.addEventListener("click", openNav);
       closeMenuBtn.addEventListener("click", closeNav);
+
+      mobileIcon.addEventListener("click", showMobileLinks);
+
     } else {
       toggleMenuBtn.removeEventListener("click", openNav);
       closeMenuBtn.removeEventListener("click", closeNav);
@@ -59,6 +61,7 @@ window.onload = function() {
       */
       menuBar.style.width = desktopMenuBarWidth;
       content.style.marginLeft = desktopContentLeftM;
+      mobileLinks.style.display = 'flex';
     }
   }
 
@@ -66,9 +69,5 @@ window.onload = function() {
   checkMobileScreen();
   window.onresize = function() {
     checkMobileScreen();
-  }
-
-  window.onclick = function(event) {
-    mobileMenuCloseOpen(event);
   }
 }
