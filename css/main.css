@@ -60,6 +60,13 @@ code p {
 }
 
 /***
+citations paragraph
+***/
+.citations {
+  display: block;
+}
+
+/***
   - display structuress
 ***/
 
