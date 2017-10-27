@@ -18,6 +18,7 @@ window.onload = function() {
   var mobileIcon = document.getElementById('nav-toggle');
   var mobileIconPadding = document.getElementById('nav-toggle-area');
   var mobileLinksA = document.getElementsByClassName('hidden-link');
+  var closeMobileNav = document.getElementById("close-nav");
 
   var deleteItemLogo = document.getElementsByClassName('delete-item');
 
@@ -51,6 +52,7 @@ window.onload = function() {
       closeMenuBtn.addEventListener("click", closeNav);
 
       mobileIcon.addEventListener("click", showMobileLinks);
+      closeMobileNav.addEventListener("click", hideMobileLinks);
 
     } else {
       toggleMenuBtn.removeEventListener("click", openNav);
@@ -62,6 +64,8 @@ window.onload = function() {
       menuBar.style.width = desktopMenuBarWidth;
       content.style.marginLeft = desktopContentLeftM;
       mobileLinks.style.display = 'flex';
+
+      mobileIcon.removeEventListener("click", showMobileLinks);
     }
   }
 
