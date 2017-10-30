@@ -59,6 +59,10 @@ code p {
   margin: 0;
 }
 
+text {
+  display: block;
+}
+
 /***
 citations paragraph
 ***/
