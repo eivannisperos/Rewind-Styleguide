@@ -49,7 +49,7 @@ img {
 code {
   display: block;
   background-color: #F69261;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 1rem;
   color: white;
   margin: 1rem 0 1rem 0;
@@ -86,7 +86,7 @@ section {
 
 .sub-section {
   background-color: #F2F2F2;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 1rem;
 }
 
@@ -124,7 +124,7 @@ section {
 button, .button-go, .button-back {
   height: 2rem;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 1rem;
   border: none;
   color: white;
@@ -137,7 +137,7 @@ input {
   text-align: left;
   color: black;
   border: solid 2px;
-  border-radius: 5px;
+  border-radius: 0px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
   margin: 0.5rem 0 0.5rem 0;
@@ -147,7 +147,7 @@ select {
   color: #F69261;
   text-align: center;
   border: solid 2px;
-  border-radius: 5px;
+  border-radius: 0px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
   margin-right: auto;
@@ -155,7 +155,7 @@ select {
 
 textarea {
   border: solid 2px;
-  border-radius: 5px;
+  border-radius: 0px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
   padding: 0.5rem;
@@ -353,6 +353,7 @@ input::placeholder {
 
   .product-list-img {
     margin-bottom: 1rem;
+    box-shadow: 5px 5px #F69261;
   }
 
   .product-price {
